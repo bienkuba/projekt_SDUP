@@ -24,40 +24,34 @@ module TOP(
     input wire clk,
     input wire rst,
     input wire data_in,
-    output reg a,
-    output reg b,
-    output reg c
+    
+    output reg data_out
     );
     
-    wire toRSC1, toRSC2, conv_sig_out_1, conv_sig_out_2;
+    wire encoder_out1, encoder_out2, encoder_out3;
+    wire decoder_out;
     
-    RSC_Encoder my_RSC_Enkoder1(
-        .clk(clk),
-        .rst(rst), 
-        .sig(toRSC1),
-        
-        .conv_sig(conv_sig_out_1)
-    );
-      
-    RSC_Encoder my_RSC_Enkoder2(
-        .clk(clk),
-        .rst(rst), 
-        .sig(toRSC2),
-        
-        .conv_sig(conv_sig_out_2)
-    );
-    
-    Interleaver my_Interleaver(
+    Turbo_Encoder my_Turbo_Encoder(
         .clk(clk),
         .rst(rst),
-        .D(data_in),
-        .Q(toRSC1),
-        .Interleaved_Q(toRSC2)
+        .data_in(data_in),
+        .a(encoder_out1),
+        .b(encoder_out2),
+        .c(encoder_out3)
+    );
+    
+    Turbo_Decoder my_Turbo_Decoder(
+        .clk(clk),
+        .rst(rst),
+        .a(encoder_out1),
+        .b(encoder_out2),
+        .c(encoder_out3),
+        
+        .decoded_data(decoder_out)
     );
     
     always @(posedge clk) begin
-        a <= data_in;
-        b <= conv_sig_out_1;
-        c <= conv_sig_out_2;
+        data_out <= decoder_out;
     end
+    
 endmodule
