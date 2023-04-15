@@ -31,7 +31,7 @@ module RSC_Encoder(
     reg sig_0, sig_1, sig_2, sig_3;
     reg shift_reg_0, shift_reg_1, adder_1, adder_1_nxt, adder_2, adder_2_nxt ;
     
-    always@(posedge clk)
+    always@(posedge clk )begin
         if (rst) begin
             shift_reg_0   <= 0;
             shift_reg_1   <= 0;
@@ -46,7 +46,8 @@ module RSC_Encoder(
             adder_2       <= adder_2_nxt;
             conv_sig      <= adder_2;            
         end
-        
+    end
+    
     always@* begin
         adder_1_nxt = sig +  shift_reg_0 + shift_reg_1;
         adder_2_nxt = adder_1 + shift_reg_1;
