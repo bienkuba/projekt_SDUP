@@ -3,13 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 15.04.2023 19:53:04
+// Create Date: 13.04.2023 10:38:02
 // Design Name: 
-// Module Name: Hard_Decision
+// Module Name: testbench_encoder
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: œ
 // 
 // Dependencies: 
 // 
@@ -20,10 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Hard_Decision(
-    input wire in,
-    output reg out
+module testbench_encoder(
+    
     );
-    
-    
 endmodule

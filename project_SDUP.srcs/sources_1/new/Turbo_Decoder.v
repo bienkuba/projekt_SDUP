@@ -30,7 +30,7 @@ module Turbo_Decoder(
     output reg decoded_data
     );
     
-    wire decoder1_out, decoder2_out, deinter1_out, inter1_out, inter2_out;
+    wire decoder1_out, decoder2_out, deinter1_out, inter1_out, inter2_out, hard_d;
 
     SISO_Decoder SISO_Decoder_1(
         .clk(clk),
@@ -73,5 +73,11 @@ module Turbo_Decoder(
         .out(deinter1_out)
     );
     
+    Hard_Decision my_Hard_Decision(
+        .in(decoder2_out),
+        .out(hard_d)
+    );
+    
+    always@* decoded_data = hard_d;
     
 endmodule
