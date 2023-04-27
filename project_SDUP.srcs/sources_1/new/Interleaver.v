@@ -21,28 +21,14 @@
 
 
 module Interleaver(
-    input wire clk,
-    input wire rst,
-    input wire D,
-    output reg Q,
-    output reg Interleaved_Q
+    input wire [2:0] data_in,
+    output reg [2:0] data_out,
+    output reg [2:0] Interleaved_data_out
     );
     
-    
-    always@(posedge clk)begin
-        if(rst) begin
-            Q               <= 0;
-            Interleaved_Q   <= 0;
-        end
-        else begin
-            Q               <= D;
-            Interleaved_Q   <= Q;
-        end
+    always@* begin
+        data_out = data_in;
+        Interleaved_data_out = {data_in[1:0], 1'b0};
     end
-    
-    
-    
-    
-    
     
 endmodule

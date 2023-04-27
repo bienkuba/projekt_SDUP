@@ -23,9 +23,9 @@
 module Turbo_Decoder(
     input wire clk,
     input wire rst,
-    input wire a,
-    input wire b,
-    input wire c,
+    input wire U,
+    input wire P,
+    input wire Q,
     
     output reg decoded_data
     );
@@ -35,8 +35,8 @@ module Turbo_Decoder(
     SISO_Decoder SISO_Decoder_1(
         .clk(clk),
         .rst(rst),
-        .Systematic_information(a),
-        .Parity_information(b),
+        .Systematic_information(U),
+        .Parity_information(P),
         .Extrinsic_information(deinter1_out),
         .out(decoder1_out)
     );  
@@ -44,7 +44,7 @@ module Turbo_Decoder(
     SISO_Decoder SISO_Decoder_2(
         .clk(clk),
         .rst(rst),
-        .Systematic_information(c),
+        .Systematic_information(Q),
         .Parity_information(inter2_out),
         .Extrinsic_information(inter1_out),
         .out(decoder2_out)
@@ -61,7 +61,7 @@ module Turbo_Decoder(
     Interleaver Interleaver_2(
         .clk(clk),
         .rst(rst),
-        .D(b),
+        .D(P),
         .Q(),
         .Interleaved_Q(inter2_out)
     );      
