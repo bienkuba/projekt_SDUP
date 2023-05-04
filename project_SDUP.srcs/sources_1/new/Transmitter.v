@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 15.04.2023 19:51:29
+// Create Date: 04.05.2023 21:49:01
 // Design Name: 
-// Module Name: Deinterleaver
+// Module Name: Transmitter
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Deinterleaver(
-    input wire [3:0] data_in,
-    output reg [3:0] data_out,
-    output reg [3:0] Deinterleaved_data_out
+module Transmitter(
+    input wire [3:0]    systematic_data,
+    input wire [3:0]    parity_1,
+    input wire [3:0]    parity_2,
+    output reg [11:0]   send_package
     );
     
     always@* begin
-        data_out = data_in;
-        Deinterleaved_data_out = {data_in[0], data_in[2], data_in[1], data_in[3]};
+        send_package = {systematic_data, parity_1, parity_2};
     end
     
 endmodule

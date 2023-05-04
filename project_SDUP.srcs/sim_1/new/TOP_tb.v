@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 16.04.2023 10:41:13
+// Create Date: 04.05.2023 22:33:38
 // Design Name: 
-// Module Name: Turbo_Encoder_tb
+// Module Name: TOP_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,66 +20,60 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Turbo_Encoder_tb;
+module TOP_tb;
     reg clk = 0;
     reg rst;
     reg [3:0] data_in;
     
-    wire [3:0] U;
-    wire [3:0] P;
-    wire [3:0] Q;
+    wire [3:0] data_out;
     
-    Turbo_Encoder UUT ( 
-        .clk(clk), 
-        .rst(rst), 
-        .data_in(data_in), 
-        .U(U), 
-        .P(P), 
-        .Q(Q) 
+    TOP UUT (
+        .clk(clk),
+        .rst(rst),
+        .data_in(data_in),
+        .data_out(data_out)
     );
     
-    always #5 clk = ~clk;
+    always #10 clk = ~clk;
     
     initial begin
+        #20
         rst <= 1;
-        #10;
+        #20
         rst <= 0;
-        
+        #20;
         data_in <= 4'b0000;
-        #10;
-        $display(data_in[3:0],"-",P[3:0]);
+        #20;
         data_in <= 4'b0001;
-        #10;
-        $display("%0b %0b", data_in[3:0], P[3:0]);
+        #20;
         data_in <= 4'b0010;
-        #10;
+        #20;
         data_in <= 4'b0011;
-        #10;
+        #20;
         data_in <= 4'b0100;
-        #10;
+        #20;
         data_in <= 4'b0101;
-        #10;
+        #20;
         data_in <= 4'b0110;
-        #10;
+        #20;
         data_in <= 4'b0111;
-        #10
+        #20;
         data_in <= 4'b1000;
-        #10;          
+        #20;
         data_in <= 4'b1001;
-        #10;          
+        #20;
         data_in <= 4'b1010;
-        #10;          
+        #20;
         data_in <= 4'b1011;
-        #10;          
+        #20;
         data_in <= 4'b1100;
-        #10;          
+        #20;
         data_in <= 4'b1101;
-        #10;          
+        #20;
         data_in <= 4'b1110;
-        #10;
+        #20;
         data_in <= 4'b1111;
-        #10;
+        #50;
         $finish;
     end
-    
 endmodule

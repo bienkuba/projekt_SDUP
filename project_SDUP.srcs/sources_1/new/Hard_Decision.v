@@ -21,9 +21,13 @@
 
 
 module Hard_Decision(
-    input wire in,
-    output reg out
+    input wire [3:0]    decoder_1,
+    input wire [3:0]    decoder_2,
+    output reg [3:0]    out
     );
     
+    always@* begin
+        out = decoder_1;
+    end
     
 endmodule

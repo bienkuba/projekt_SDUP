@@ -21,31 +21,24 @@
 
 
 module Interleaver_tb;
+    reg [3:0] data_in;
     
-    reg clk = 0;
-    reg rst;
-    reg D;
+    wire [3:0] data_out;
+    wire [3:0] Interleaved_data_out;
     
-    wire Q;
-    wire Interleaved_Q;
-    
-    Interleaver UUT ( 
-        .clk(clk), 
-        .rst(rst), 
-        .D(D), 
-        .Q(Q), 
-        .Interleaved_Q(Interleaved_Q) 
+    Interleaver UUT (
+        .data_in(data_in), 
+        .data_out(data_out), 
+        .Interleaved_data_out(Interleaved_data_out) 
     );
     
-    always #5 clk = ~clk;
-    
     initial begin
-        rst <= 1;
-        D   <= 1;
-        
         #10;
-        rst <= 0;
-        
+        data_in <= 4'b0001;
+        #10
+        data_in <= 4'b0011;
+        #10
+        data_in <= 4'b0101;
         #100;
         $finish;
     end
