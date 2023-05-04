@@ -23,7 +23,7 @@
 module TOP(
     input wire clk,
     input wire rst,
-    input wire data_in,
+    input wire [2:0] data_in,
     
     output reg data_out
     );
@@ -32,25 +32,23 @@ module TOP(
     wire decoder_out;
     
     Turbo_Encoder my_Turbo_Encoder(
-        .clk(clk),
-        .rst(rst),
         .data_in(data_in),
-        .a(encoder_out1),
-        .b(encoder_out2),
-        .c(encoder_out3)
+        .U(encoder_out1),
+        .P(encoder_out2),
+        .Q(encoder_out3)
     );
     
-    Turbo_Decoder my_Turbo_Decoder(
+/*    Turbo_Decoder my_Turbo_Decoder(
         .clk(clk),
         .rst(rst),
-        .a(encoder_out1),
-        .b(encoder_out2),
-        .c(encoder_out3),
+        .U(encoder_out1),
+        .P(encoder_out2),
+        .Q(encoder_out3),
         
         .decoded_data(decoder_out)
-    );
+    );*/
     
-    always @(posedge clk) begin
+    always @* begin
         data_out <= decoder_out;
     end
     

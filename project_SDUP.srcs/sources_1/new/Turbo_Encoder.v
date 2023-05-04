@@ -23,43 +23,34 @@
 module Turbo_Encoder(
     input wire clk,
     input wire rst,
-    input wire data_in,
-    output reg a,
-    output reg b,
-    output reg c
+    input wire [2:0] data_in,
+    output reg [2:0] U,
+    output reg [2:0] P,
+    output reg [2:0] Q
     );
     
-    wire toRSC1, toRSC2, conv_sig_out_1, conv_sig_out_2;
+    wire [2:0] toRSC1, toRSC2, conv_sig_out_1, conv_sig_out_2;
     
 
     RSC_Encoder my_RSC_Encoder1( //recursive systematic convolutional
-        .clk(clk),
-        .rst(rst), 
-        .sig(toRSC1),
-        
-        .conv_sig(conv_sig_out_1)
+        .U(toRSC1),
+        .P(conv_sig_out_1)
     );
       
     RSC_Encoder my_RSC_Encoder2(
-        .clk(clk),
-        .rst(rst), 
-        .sig(toRSC2),
-        
-        .conv_sig(conv_sig_out_2)
+        .U(toRSC2),
+        .P(conv_sig_out_2)
     );
     
     Interleaver my_Interleaver(
-        .clk(clk),
-        .rst(rst),
-        .D(data_in),
-        
-        .Q(toRSC1),
-        .Interleaved_Q(toRSC2)
+        .data_in(data_in),
+        .data_out(toRSC1),
+        .Interleaved_data_out(toRSC2)
     );
     
-    always @(posedge clk) begin
-        a <= data_in;
-        b <= conv_sig_out_1;
-        c <= conv_sig_out_2;
+    always @(*) begin
+        U = data_in;
+        P = conv_sig_out_1;
+        Q = conv_sig_out_2;
     end
 endmodule
