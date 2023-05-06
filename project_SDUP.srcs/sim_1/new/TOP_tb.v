@@ -37,7 +37,7 @@ module TOP_tb;
     always #10 clk = ~clk;
     
     initial begin
-        #20
+        #60
         rst <= 1;
         #20
         rst <= 0;
@@ -73,6 +73,8 @@ module TOP_tb;
         data_in <= 4'b1110;
         #20;
         data_in <= 4'b1111;
+        #20;
+        data_in <= 4'b0000;
         #50;
         $finish;
     end

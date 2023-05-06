@@ -28,7 +28,7 @@ module Deinterleaver(
     
     always@* begin
         data_out = data_in;
-        Deinterleaved_data_out = {data_in[0], data_in[2], data_in[1], data_in[3]};
+        Deinterleaved_data_out = {data_in[0], data_in[1], data_in[2], data_in[3]};
     end
     
 endmodule
