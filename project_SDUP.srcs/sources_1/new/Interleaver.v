@@ -21,14 +21,14 @@
 
 
 module Interleaver(
-    input wire [2:0] data_in,
-    output reg [2:0] data_out,
-    output reg [2:0] Interleaved_data_out
+    input wire [3:0] data_in,
+    output reg [3:0] data_out,
+    output reg [3:0] Interleaved_data_out
     );
     
     always@* begin
         data_out = data_in;
-        Interleaved_data_out = {data_in[1:0], 1'b0};
+        Interleaved_data_out = {data_in[0],data_in[1],data_in[2],data_in[3]};
     end
     
 endmodule

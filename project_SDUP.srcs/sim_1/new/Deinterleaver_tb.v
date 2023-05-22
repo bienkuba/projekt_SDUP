@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 16.04.2023 10:10:40
+// Create Date: 06.05.2023 16:37:06
 // Design Name: 
-// Module Name: Interleaver_tb
+// Module Name: Deinterleaver_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,16 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Interleaver_tb;
+module Deinterleaver_tb;
     reg [3:0] data_in;
     
     wire [3:0] data_out;
-    wire [3:0] Interleaved_data_out;
+    wire [3:0] Deinterleaved_data_out;
     
-    Interleaver UUT (
+    Deinterleaver UUT (
         .data_in(data_in), 
         .data_out(data_out), 
-        .Interleaved_data_out(Interleaved_data_out) 
+        .Deinterleaved_data_out(Deinterleaved_data_out) 
     );
     
     initial begin
@@ -39,7 +39,7 @@ module Interleaver_tb;
         data_in <= 4'b0011;
         #10
         data_in <= 4'b0101;
-        #100;
+        #10;
         $finish;
     end
 endmodule
