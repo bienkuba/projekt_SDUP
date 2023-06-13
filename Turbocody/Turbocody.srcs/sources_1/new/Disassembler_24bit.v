@@ -21,23 +21,36 @@
 
 
 module Disassembler_24bit(
+    input clk,
+    input reset,
     input [23:0] data_in,
     output reg [7:0] out_1,
     output reg [15:0] out_2,
-    output reg [15:0] out_3
+    output reg [15:0] out_3,
+    output reg data_disassembled
     );
     
     wire [7:0] data_interleaved;
+    wire intl_done;
     
     Interleaver_8bit interleaver (
+           .clk(clk),
+           .reset(reset),
            .data_in(data_in[23:16]),
-           .data_out(data_interleaved)
+           .data_out(data_interleaved),
+           .ready_out(intl_done)
     );
     
-    initial begin
-        assign out_1 = data_in[23:16];
-        assign out_2 = {data_in[23], data_in[15], data_in[22], data_in[14], data_in[21], data_in[13], data_in[20], data_in[12], data_in[19], data_in[11], data_in[18], data_in[10], data_in[17], data_in[9], data_in[16], data_in[8]};
-        assign out_3 = {data_interleaved[7], data_in[7], data_interleaved[6], data_in[6], data_interleaved[5], data_in[5], data_interleaved[4], data_in[4], data_interleaved[3], data_in[3], data_interleaved[2], data_in[2], data_interleaved[1], data_in[1], data_interleaved[0], data_in[0]};
+    always @(posedge clk) begin
+        if(intl_done) begin
+            assign out_1 = data_in[23:16];
+            assign out_2 = {data_in[23], data_in[15], data_in[22], data_in[14], data_in[21], data_in[13], data_in[20], data_in[12], data_in[19], data_in[11], data_in[18], data_in[10], data_in[17], data_in[9], data_in[16], data_in[8]};
+            assign out_3 = {data_interleaved[7], data_in[7], data_interleaved[6], data_in[6], data_interleaved[5], data_in[5], data_interleaved[4], data_in[4], data_interleaved[3], data_in[3], data_interleaved[2], data_in[2], data_interleaved[1], data_in[1], data_interleaved[0], data_in[0]};
+            data_disassembled <= 1;
+        end 
+        else begin
+            data_disassembled <= 0;
+        end
     end
     
 endmodule

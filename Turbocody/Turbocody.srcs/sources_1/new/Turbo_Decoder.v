@@ -11,46 +11,52 @@ module Turbo_Decoder(
     wire [7:0] data_deinterleaved;
     wire [15:0] data_parity_1, data_parity_2;
     wire [7:0] data_original, data_decode_1, data_decode_2;
+    wire data_ready, data_decoded_1, data_decoded_2, deintl_ready, decoded_ready;
     
     Decoder_16bit decoder_1(
         .clk(clk),
-        .reset(reset),
+        .reset(data_ready),
         .data_in(data_parity_1),
-        .data_out(data_decode_1)
+        .data_out(data_decode_1),
+        .ready_out(data_decoded_1)
     );
     
     Decoder_16bit decoder_2(
         .clk(clk),
-        .reset(reset),
+        .reset(data_ready),
         .data_in(data_parity_2),
-        .data_out(data_decode_2)
+        .data_out(data_decode_2),
+        .ready_out(data_decoded_2)
     );
     
     Disassembler_24bit disassembler(
+        .clk(clk),
+        .reset(reset),
         .data_in(data_in),
         .out_1(data_original),
         .out_2(data_parity_1),
-        .out_3(data_parity_2)  
+        .out_3(data_parity_2),
+        .data_disassembled(data_ready)
     );
     
+    Deinterleaver deinterleaver (
+        .clk(clk),
+        .enable(data_decoded_2),
+        .data_in(data_decode_2),
+        .data_out(data_deinterleaved),
+        .ready_out(deintl_ready)
+    );
+    
+    
     check_if_equal check(
+        .clk(clk),
+        .enable(deintl_ready),
         .original(data_original),        
         .data_decode_1(data_decode_1),     
         .data_deinterleaved(data_deinterleaved),
-        .ouput_data(data_out)
+        .output_data(data_out),
+        .ready_out(decoded_ready)
      );   
-        
-        
-    
-//    Interleaver_8bit interleaver (
-//       .data_in(data_in[23:16]),
-//       .data_out(data_interleaved)
-//    );
-    
-    Deinterleaver deinterleaver (
-        .data_in(data_decode_2),
-        .data_out(data_deinterleaved)
-    );
     
     
     

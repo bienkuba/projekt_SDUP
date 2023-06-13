@@ -2,23 +2,25 @@
 
 module Turbo_testbench();
     reg clk;
-    reg reset_enc;
-    reg reset_dec;
+    reg reset;
+//    reg reset_dec;
     reg [7:0] data_in;
     wire [23:0] data_encode;
     wire [7:0] data_out;
+    wire ready_encoded;
         
         
     Turbo_Encoder TE (
         .clk(clk),
-        .reset(reset_enc),
+        .reset(reset),
         .data_in(data_in),
-        .data_out(data_encode)
+        .data_out(data_encode),
+        .ready_encoded(ready_encoded)
     );
     
     Turbo_Decoder TD (
         .clk(clk),
-        .reset(reset_dec),
+        .reset(~ready_encoded),
         .data_in(data_encode),
         .data_out(data_out)
     );
@@ -29,17 +31,17 @@ module Turbo_testbench();
       end
       
       initial begin
-          reset_enc = 1;
-          reset_dec = 1;
-          #10;
-          reset_enc = 0;
-          #80;
-          reset_dec = 0;
-          reset_enc = 1;
+          reset = 1;
+//          reset_dec = 1;
+          #5;
+          reset = 0;
+//          #120;
+//          //reset_dec = 0;
+//          reset_enc = 1;
       end
       
       initial begin
           data_in = 8'b10110100;
-          #175 $finish;
+          #300 $finish;
       end
 endmodule

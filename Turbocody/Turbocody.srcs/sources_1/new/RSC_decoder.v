@@ -24,7 +24,8 @@ module Decoder_16bit(
     input clk,
     input reset,
     input [15:0] data_in,
-    output reg [7:0] data_out
+    output reg [7:0] data_out, 
+    output reg ready_out
     );
     
     integer i = 0;
@@ -77,17 +78,21 @@ module Decoder_16bit(
         endcase
     end
      
-    // Update state and data_out
     always @(posedge clk, posedge reset) begin
         if (reset) begin
             state <= 2'b00;
             current_data <= 2'b00;
             i = 15;
-        end else begin
+            ready_out <= 0;
+        end 
+        else if (i >= 0) begin
             $display("%b", current_data);
             state <= next_state;
             data_out <= {data_out, next_data_out};
             i <= i - 2;
+        end
+        else begin
+            ready_out <= 1;
         end
     end
     

@@ -21,17 +21,24 @@
 
 
 module check_if_equal(
+    input clk,
+    input enable,
     input [7:0] original,
     input [7:0] data_decode_1,
     input [7:0] data_deinterleaved,
-    output reg [7:0] ouput_data
+    output reg [7:0] output_data,
+    output reg ready_out
     );
     
-    initial begin
-        if(data_decode_1 == data_deinterleaved) begin
-            ouput_data = original;
-            $display("ZDEKODOWANO POPRAWNIE");
-         end
+    always @(posedge clk)
+    begin
+        if (enable) begin
+            if((original == data_deinterleaved)&&(original == data_decode_1)) begin
+                output_data = original;
+                $display("ZDEKODOWANO POPRAWNIE");
+                ready_out <= 1;
+            end
+        end
     end
     
 endmodule
