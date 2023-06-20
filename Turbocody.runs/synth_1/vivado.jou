@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 20 10:21:59 2023
+# Process ID: 9500
+# Current directory: C:/Xilinx/Vivado/project_SDUP/Turbocody.runs/synth_1
+# Command line: vivado.exe -log Turbocode_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Turbocode_top.tcl
+# Log file: C:/Xilinx/Vivado/project_SDUP/Turbocody.runs/synth_1/Turbocode_top.vds
+# Journal file: C:/Xilinx/Vivado/project_SDUP/Turbocody.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Turbocode_top.tcl -notrace

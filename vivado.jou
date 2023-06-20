@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 20 09:46:35 2023
+# Process ID: 22308
+# Current directory: C:/Xilinx/Vivado/project_SDUP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11360 C:\Xilinx\Vivado\project_SDUP\Turbocody.xpr
+# Log file: C:/Xilinx/Vivado/project_SDUP/vivado.log
+# Journal file: C:/Xilinx/Vivado/project_SDUP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Vivado/project_SDUP/Turbocody.xpr
+update_compile_order -fileset sources_1
+set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
