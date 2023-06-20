@@ -3,23 +3,25 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="32" Path="C:/Users/stasm/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-46704-DESKTOP-GG9V6KE/PrjAr/_X_/Turbocody.xpr">
+<Project Version="7" Minor="32" Path="C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="1c710d20deb44689b07fc9282325a142"/>
+    <Option Name="Id" Val="629982262a6c4654b0dbfa735fbb18b0"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.cache/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/turbocode_ip_1.0"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -30,20 +32,20 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="118"/>
+    <Option Name="WTXSimLaunchSim" Val="187"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
+    <Option Name="WTIesExportSim" Val="1"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -56,8 +58,6 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/Deinterleaver.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/Deinterleaver.v"/>
-          <Attr Name="ImportTime" Val="1684401238"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -65,8 +65,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Disassembler_24bit.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/Disassembler_24bit.v"/>
-          <Attr Name="ImportTime" Val="1684758940"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -74,8 +72,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Interleaver.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/Interleaver.v"/>
-          <Attr Name="ImportTime" Val="1684338414"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -83,26 +79,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/RSC_decoder.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/RSC_decoder.v"/>
-          <Attr Name="ImportTime" Val="1684396546"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/check_if_equal.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/check_if_equal.v"/>
-          <Attr Name="ImportTime" Val="1684761867"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/Turbo_Decoder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/Turbo_Decoder.v"/>
-          <Attr Name="ImportTime" Val="1684759947"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -110,19 +86,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/RSC_encoder.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/RSC_encoder.v"/>
-          <Attr Name="ImportTime" Val="1684336921"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/data_assembler.v">
+      <File Path="$PSRCDIR/sources_1/new/Turbo_Decoder.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/data_assembler.v"/>
-          <Attr Name="ImportTime" Val="1685000395"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -130,9 +100,27 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Turbo_Encoder.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/Turbo_Encoder.v"/>
-          <Attr Name="ImportTime" Val="1684761082"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/check_if_equal.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/data_assembler.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Turbocode_top.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -141,7 +129,7 @@
       <File Path="$PSRCDIR/sources_1/imports/test_RSC_project/Decoder.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/test_RSC_project/Decoder.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../test_RSC_project/Decoder.v"/>
           <Attr Name="ImportTime" Val="1682263781"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -151,21 +139,36 @@
       <File Path="$PSRCDIR/sources_1/imports/test_RSC_project/convolutional_encoder.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/test_RSC_project/convolutional_encoder.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../test_RSC_project/convolutional_encoder.v"/>
           <Attr Name="ImportTime" Val="1682263781"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Turbo_Decoder"/>
+        <Option Name="TopModule" Val="Turbocode_top"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/Turbocody/ZYBO_Master.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../projekt_SDUP/Turbocody/ZYBO_Master.xdc"/>
+          <Attr Name="ImportTime" Val="1686833923"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
@@ -174,8 +177,6 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/Turbo_testbench.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sim_1/new/Turbo_testbench.v"/>
-          <Attr Name="ImportTime" Val="1684400426"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -184,8 +185,6 @@
       <File Path="$PSRCDIR/sim_1/new/Turbo_Encoder_TB.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sim_1/new/Turbo_Encoder_TB.v"/>
-          <Attr Name="ImportTime" Val="1684763502"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -194,7 +193,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/RSC_TB.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sim_1/new/RSC_TB.v"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/RSC_TB.v"/>
           <Attr Name="ImportTime" Val="1684228444"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -204,8 +203,6 @@
       <File Path="$PSRCDIR/sim_1/new/RSC_decoder_TB.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sim_1/new/RSC_decoder_TB.v"/>
-          <Attr Name="ImportTime" Val="1684227909"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -214,8 +211,6 @@
       <File Path="$PSRCDIR/sim_1/new/RSC_encoder_TB.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sim_1/new/RSC_encoder_TB.v"/>
-          <Attr Name="ImportTime" Val="1684336924"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -224,7 +219,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/Decoder_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/test_RSC_project/test_RSC_project.srcs/sim_1/new/Decoder_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../test_RSC_project/test_RSC_project.srcs/sim_1/new/Decoder_tb.v"/>
           <Attr Name="ImportTime" Val="1682268116"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -234,7 +229,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/enc_dec_testbench.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/test_RSC_project/test_RSC_project.srcs/sim_1/new/enc_dec_testbench.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../test_RSC_project/test_RSC_project.srcs/sim_1/new/enc_dec_testbench.v"/>
           <Attr Name="ImportTime" Val="1682580806"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -244,17 +239,15 @@
       <File Path="$PSRCDIR/sim_1/imports/new/convolutional_encoder_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/test_RSC_project/test_RSC_project.srcs/sim_1/new/convolutional_encoder_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../test_RSC_project/test_RSC_project.srcs/sim_1/new/convolutional_encoder_tb.v"/>
           <Attr Name="ImportTime" Val="1682269973"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg">
+      <File Path="$PPRDIR/RSC_Encoder_8bit_TB_behav.wcfg">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg"/>
-          <Attr Name="ImportTime" Val="1685000710"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -265,7 +258,7 @@
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../../../../../../../../../../SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/RSC_Encoder_8bit_TB_behav.wcfg"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -288,17 +281,20 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017">
-        <ReportConfig Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" Version="1" Minor="0">
+        <ReportConfig Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="Turbocode_top_utilization_synth.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbo_Encoder_utilization_synth.pb"/>
         </ReportConfig>
-        <ReportConfig Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design">
+        <ReportConfig Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="Turbocode_top.vds">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
@@ -306,7 +302,9 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -386,13 +384,13 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="Turbocode_top_incremental_reuse_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
         <ReportConfig Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design">
+        <ReportConfig Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="Turbocode_top.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
         <ReportConfig Name="impl_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">

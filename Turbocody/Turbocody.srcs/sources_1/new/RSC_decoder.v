@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11.05.2023 10:40:03
-// Design Name: 
-// Module Name: RSC_decoder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module Decoder_16bit(
     input clk,
@@ -79,7 +59,7 @@ module Decoder_16bit(
     end
      
     always @(posedge clk, posedge reset) begin
-        if (reset) begin
+        if (~reset) begin
             state <= 2'b00;
             current_data <= 2'b00;
             i = 15;

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu May 11 09:33:25 2023
+# Process ID: 34604
+# Current directory: C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23252 C:\SDUP\Projekt_Turbocode\projekt_SDUP\Turbocody\Turbocody.xpr
+# Log file: C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/vivado.log
+# Journal file: C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source RSC_Encoder_8bit_TB.tcl
+close [ open C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/RSC_decoder.v w ]
+add_files C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.srcs/sources_1/new/RSC_decoder.v
+update_compile_order -fileset sources_1

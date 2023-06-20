@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Jun 19 21:47:27 2023
+# Process ID: 50580
+# Current directory: C:/SDUP/projekt_SDUP/Turbocody_backup
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17500 C:\SDUP\projekt_SDUP\Turbocody_backup\Turbocody.xpr
+# Log file: C:/SDUP/projekt_SDUP/Turbocody_backup/vivado.log
+# Journal file: C:/SDUP/projekt_SDUP/Turbocody_backup\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SDUP/projekt_SDUP/Turbocody_backup/Turbocody.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/stasm/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-46704-DESKTOP-GG9V6KE/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 801.066 ; gain = 3.816
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 19 21:48:47 2023...

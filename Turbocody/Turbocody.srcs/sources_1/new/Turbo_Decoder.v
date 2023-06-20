@@ -1,17 +1,19 @@
 `timescale 1ns / 1ps
 
 module Turbo_Decoder(
-    input clk,
-    input reset,
-    input [23:0] data_in,
-    output [7:0] data_out
+        input clk,
+        input reset,
+        input [23:0] data_in,
+        output [7:0] data_out,
+        output decoded_ready
     );
     
     
     wire [7:0] data_deinterleaved;
     wire [15:0] data_parity_1, data_parity_2;
     wire [7:0] data_original, data_decode_1, data_decode_2;
-    wire data_ready, data_decoded_1, data_decoded_2, deintl_ready, decoded_ready;
+    wire data_ready, data_decoded_1, data_decoded_2, deintl_ready;
+    //, decoded_ready;
     
     Decoder_16bit decoder_1(
         .clk(clk),

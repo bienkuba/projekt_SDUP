@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu May 25 09:30:34 2023
+# Process ID: 46704
+# Current directory: C:/Users/stasm/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34608
+# Log file: C:/Users/stasm/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/stasm/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/Turbocody.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+add_wave {{/Turbo_testbench/TE/data_in}} {{/Turbo_testbench/TE/data_out}} {{/Turbo_testbench/TE/data_in_2}} {{/Turbo_testbench/TE/data_1}} {{/Turbo_testbench/TE/data_2}} {{/Turbo_testbench/TE/parity_1}} {{/Turbo_testbench/TE/parity_2}} {{/Turbo_testbench/TE/data_concatentate}} 
+save_wave_config {C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+add_wave {{/Turbo_testbench/clk}} {{/Turbo_testbench/reset_enc}} {{/Turbo_testbench/reset_dec}} 
+save_wave_config {C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+archive_project C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody_StateMacine.xpr.zip -temp_dir C:/Users/stasm/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-46704-DESKTOP-GG9V6KE -force -exclude_run_results -include_local_ip_cache

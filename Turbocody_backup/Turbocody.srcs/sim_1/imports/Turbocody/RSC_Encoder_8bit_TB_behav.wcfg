@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Turbo_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Turbo_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="64410234fs"></ZoomEndTime>
+      <Cursor1Time time="165004000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="246"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/Turbo_testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/reset_enc" type="logic">
+      <obj_property name="ElementShortName">reset_enc</obj_property>
+      <obj_property name="ObjectShortName">reset_enc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/reset_dec" type="logic">
+      <obj_property name="ElementShortName">reset_dec</obj_property>
+      <obj_property name="ObjectShortName">reset_dec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_original" type="array">
+      <obj_property name="ElementShortName">data_original[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_original[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_deinterleaved" type="array">
+      <obj_property name="ElementShortName">data_deinterleaved[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_deinterleaved[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_parity_1" type="array">
+      <obj_property name="ElementShortName">data_parity_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_parity_1[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_decode_1" type="array">
+      <obj_property name="ElementShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/decoder_1/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/decoder_1/current_data" type="array">
+      <obj_property name="ElementShortName">current_data[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_data[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_parity_2" type="array">
+      <obj_property name="ElementShortName">data_parity_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_parity_2[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/data_decode_2" type="array">
+      <obj_property name="ElementShortName">data_decode_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_decode_2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/decoder_2/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TD/decoder_2/current_data" type="array">
+      <obj_property name="ElementShortName">current_data[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_data[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TE/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TE/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TE/data_in_2" type="array">
+      <obj_property name="ElementShortName">data_in_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TE/data_1" type="array">
+      <obj_property name="ElementShortName">data_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_1[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TE/data_2" type="array">
+      <obj_property name="ElementShortName">data_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_2[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
