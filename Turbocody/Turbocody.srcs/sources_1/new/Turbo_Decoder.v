@@ -49,6 +49,7 @@ module Turbo_Decoder(
     
     Deinterleaver deinterleaver (
         .clk(clk),
+        .reset(reset),
         .enable(data_decoded_2),
         .data_in(data_decode_2),
         .data_out(data_deinterleaved),

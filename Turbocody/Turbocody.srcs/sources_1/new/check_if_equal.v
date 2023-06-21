@@ -42,10 +42,42 @@ module check_if_equal(
             led3 <= 0;
         end
         else begin
-            led0 <= (original == data_decode_1 == data_deinterleaved)   ? 1 : 0; //all outputs correct
-            led1 <= (data_decode_1 == data_deinterleaved)               ? 1 : 0; //original with error
-            led2 <= (original == data_deinterleaved)                    ? 1 : 0; //parity1 with error
-            led3 <= (original == data_decode_1)                         ? 1 : 0; //parity2 with error
+            if (original == data_decode_1 == data_deinterleaved) begin
+                led0 = 1;
+                led1 = 0;
+                led2 = 0;
+                led3 = 0;
+            end
+            else if (data_decode_1 == data_deinterleaved) begin
+                led0 = 0;
+                led1 = 1;
+                led2 = 0;
+                led3 = 0;
+            end
+            else if (original == data_deinterleaved) begin
+                led0 = 0;
+                led1 = 0;
+                led2 = 1;
+                led3 = 0;
+            end
+            else if (original == data_decode_1) begin
+                led0 = 0;
+                led1 = 0;
+                led2 = 0;
+                led3 = 1;
+            end
+            else if (original != data_decode_1 != data_deinterleaved) begin
+                led0 = 0;
+                led1 = 1;
+                led2 = 1;
+                led3 = 0;
+            end
+            else begin
+                led0 = 0;
+                led1 = 0;
+                led2 = 0;
+                led3 = 0;
+            end
         end
     end
     

@@ -20,13 +20,14 @@ module Disassembler_24bit(
     reg [15:0] out_3_nxt;
     
     Interleaver_8bit interleaver (
-           .clk(clk),
-           .reset(en),
-           .data_in(data_in[23:16]),
-           .data_out(data_interleaved),
-           .ready_out(intl_in_progress)
+        .clk(clk),
+        .reset(en),
+        .data_in(data_in[23:16]),
+        .data_out(data_interleaved),
+        .data_in_pass(),
+        .ready_out(intl_in_progress)
     );
-    
+
     always @(*) begin
             out_1_nxt = data_in[23:16];
             out_2_nxt = {data_in[23], data_in[15], data_in[22], data_in[14], data_in[21], data_in[13], data_in[20], data_in[12], data_in[19], data_in[11], data_in[18], data_in[10], data_in[17], data_in[9], data_in[16], data_in[8]};
@@ -38,10 +39,10 @@ module Disassembler_24bit(
                 out_1 = out_1_nxt;
                 out_2 = out_2_nxt;
                 out_3 = out_3_nxt;
-                data_disassembled <= 1;
+                data_disassembled <= 0;
             end 
             else begin
-                data_disassembled <= 0;
+                data_disassembled <= 1;
             end
         end
     

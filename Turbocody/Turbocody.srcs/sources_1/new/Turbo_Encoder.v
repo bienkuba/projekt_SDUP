@@ -6,14 +6,14 @@ module Turbo_Encoder(
     input wire          sw1,
     input wire          sw2,
     input wire [7:0]    data_in,
-    output  [23:0]   data_out,
-    output           ready_encoded
+    output reg [23:0]   data_out,
+    output reg          ready_encoded
     );
     
-    wire        ready_data_1, ready_data_2, ready_out_intl, inter_ready_out;
+    wire        ready_data_1, ready_data_2, ready_out_intl, inter_ready_out, ready_encoded_out;
     wire [7:0]  inter_out_1, inter_out_2;
     wire [15:0] data_1, data_2;//, data_p1, data_p2;
-    
+    wire [23:0] data_assembler_out;
     reg [7:0] parity_1, parity_2;
     //reg [23:0] data_concatentate;
     
@@ -56,8 +56,12 @@ module Turbo_Encoder(
         .data_in(data_in),       
         .data_1(data_1),        
         .data_2(data_2),        
-        .data_assembled(data_out),
-        .ready_data_encoded(ready_encoded)
+        .data_assembled(data_assembler_out),
+        .ready_data_encoded(ready_encoded_out)
    );
    
+    always@* begin
+        data_out = data_assembler_out;
+        ready_encoded = ready_encoded_out;
+    end
 endmodule

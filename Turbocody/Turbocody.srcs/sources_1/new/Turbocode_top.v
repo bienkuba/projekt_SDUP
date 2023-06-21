@@ -9,15 +9,16 @@ module Turbocode_top(
         //input [7:0] data_in,
         //output [7:0] data_out,
         //output data_ready,
-        output led0,
-        output led1,
-        output led2,
-        output led3
+        output reg led0,
+        output reg led1,
+        output reg led2,
+        output reg led3
     );
     
-    reg  [7:0] data_in;
+    wire        on0, on1, on2, on3;
+    reg  [7:0]  data_in;
     wire [23:0] data_encode, data_out_error;
-    wire ready_encoded, ready_to_decode;
+    wire        ready_encoded, ready_to_decode;
     
             
     Turbo_Encoder TE (
@@ -44,10 +45,10 @@ module Turbocode_top(
         .reset(reset_BTN),
         .en(ready_encoded),
         .data_in(data_encode),
-        .led0(led0),
-        .led1(led1),
-        .led2(led2),
-        .led3(led3)
+        .led0(on0),
+        .led1(on1),
+        .led2(on2),
+        .led3(on3)
     );
     
 //   initial begin
@@ -59,6 +60,10 @@ module Turbocode_top(
     always@(*) begin
         if(sw0) data_in = 8'b10110100;
         else    data_in = 8'b00000000;
+        led0 = on0;
+        led1 = on1;
+        led2 = on2;
+        led3 = on3;
     end
     
     
