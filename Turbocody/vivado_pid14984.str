@@ -1,0 +1,199 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 14984
+License: Customer
+
+Current time: 	Wed Jun 21 20:34:31 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 52 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	czlow
+User home directory: C:/Users/czlow
+User working directory: C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/czlow/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/czlow/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/czlow/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/vivado.log
+Vivado journal file location: 	C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/vivado.jou
+Engine tmp dir: 	C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/.Xil/Vivado-14984-LAPTOP-1QF2NU10
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 628 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 108 MB (+110906kb) [00:00:05]
+// [Engine Memory]: 605 MB (+483183kb) [00:00:05]
+// aL (cl): Older Project Version: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 48 MB. Current time: 6/21/23, 8:34:33 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: C:\Users\czlow\OneDrive\Dokumenty\GitHub\projekt_SDUP\Turbocody\Turbocody.xpr. Version: Vivado v2017.3 
+// by (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aL (cl)
+// Tcl Message: open_project C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/Turbocody.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 726 MB (+94880kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  1989 ms.
+// Tcl Message: open_project C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/Turbocody.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/SDUP/Projekt_Turbocode/projekt_SDUP/Turbocody' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'Turbocody.xpr' upgraded for this version of Vivado. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 804.891 ; gain = 119.918 
+// Project name: Turbocody; location: C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody; part: xc7z010clg400-1
+// [Engine Memory]: 801 MB (+40248kb) [00:00:22]
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 801 MB. GUI used memory: 53 MB. Current time: 6/21/23, 8:34:49 PM CEST
+// al (cl): Project Upgraded: addNotify
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a (al)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+dismissDialog("Project Upgraded"); // al (cl)
+// by (cl):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TD : Turbo_Decoder (Turbo_Decoder.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TD : Turbo_Decoder (Turbo_Decoder.v), check : check_if_equal (check_if_equal.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TD : Turbo_Decoder (Turbo_Decoder.v), check : check_if_equal (check_if_equal.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("check_if_equal.v", 446, 401); // cl (w, cl)
+typeControlKey((HResource) null, "check_if_equal.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v), assemble : DataAssembler (data_assembler.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v), assemble : DataAssembler (data_assembler.v)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 824 MB. GUI used memory: 56 MB. Current time: 6/21/23, 8:35:29 PM CEST
+typeControlKey((HResource) null, "data_assembler.v", 'v'); // cl (w, cl)
+selectCodeEditor("data_assembler.v", 471, 397); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v)]", 3, true); // B (F, cl) - Node
+// [GUI Memory]: 114 MB (+380kb) [00:01:22]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v), TE : Turbo_Encoder (Turbo_Encoder.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Turbo_Encoder.v", 122, 80); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 130, 96); // cl (w, cl)
+typeControlKey((HResource) null, "Turbo_Encoder.v", 'c'); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 138, 82); // cl (w, cl)
+typeControlKey((HResource) null, "Turbo_Encoder.v", 'v'); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 110, 79); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 92, 96); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 69, 62); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 69, 60, false, true, false, false, false); // cl (w, cl) - Control Key
+// Elapsed time: 13 seconds
+selectCodeEditor("Turbo_Encoder.v", 73, 127); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 140, 113, false, true, false, false, false); // cl (w, cl) - Control Key
+selectCodeEditor("Turbo_Encoder.v", 148, 128); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 80, 145); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 75, 164); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 153, 150); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 399, 184); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("Turbo_Encoder.v", 158, 347); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("Turbo_Encoder.v", 244, 394); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 115, 362); // cl (w, cl)
+selectCodeEditor("Turbo_Encoder.v", 125, 365); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v)]", 2, true); // B (F, cl) - Node
+selectCodeEditor("Turbo_Encoder.v", 508, 234); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Turbocode_top (Turbocode_top.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Turbocode_top.v", 135, 96); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 135, 96); // cl (w, cl)
+typeControlKey((HResource) null, "Turbocode_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 178, 111); // cl (w, cl)
+typeControlKey((HResource) null, "Turbocode_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 116, 111); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 159, 120); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 187, 219); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 149, 233); // cl (w, cl)
+typeControlKey((HResource) null, "Turbocode_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 203, 220); // cl (w, cl)
+typeControlKey((HResource) null, "Turbocode_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 109, 232); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 96, 58, false, true, false, false, false); // cl (w, cl) - Control Key
+selectCodeEditor("Turbocode_top.v", 105, 192, false, true, false, false, false); // cl (w, cl) - Control Key
+selectCodeEditor("Turbocode_top.v", 488, 158); // cl (w, cl)
+selectCodeEditor("Turbocode_top.v", 337, 281); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
