@@ -1,4 +1,24 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 22.05.2023 14:41:56
+// Design Name: 
+// Module Name: check_if_equal
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module check_if_equal(
     input clk,
@@ -23,7 +43,7 @@ module check_if_equal(
             //output_data <= 8'b00000000;
         end
         else begin
-            //if (enable) begin
+            if (enable) begin
                 if (original == data_deinterleaved == data_decode_1) begin
                       $display("ZDEKODOWANO POPRAWNIE");
                       led0 <= 0;
@@ -31,28 +51,28 @@ module check_if_equal(
                       led2 <= 0;
                       led3 <= 1;
                 end
-                if (original != data_decode_1) begin
+                else if (original != data_decode_1) begin
                     $display("B£¥D: dekoder1");
                     led0 <= 0;
                     led1 <= 1;
                     led2 <= 0;
                     led3 <= 0;
                 end
-                if (original != data_deinterleaved) begin
+                else if (original != data_deinterleaved) begin
                     $display("B£¥D: dekoder2");
                     led0 <= 0;
                     led1 <= 0;
                     led2 <= 1;
                     led3 <= 0;
                 end   
-//                if (original == data_deinterleaved == data_decode_1) begin
-//                    $display("ZDEKODOWANO POPRAWNIE");
-//                    led0 <= 0;
-//                    led1 <= 0;
-//                    led2 <= 0;
-//                    led3 <= 1;
-//                end
-              //end
+                else if (original == data_deinterleaved == data_decode_1) begin
+                    $display("ZDEKODOWANO POPRAWNIE");
+                    led0 <= 0;
+                    led1 <= 0;
+                    led2 <= 0;
+                    led3 <= 1;
+                end
+              end
          end
     end
 endmodule

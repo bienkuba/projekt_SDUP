@@ -5,7 +5,7 @@ module Turbocode_top(
         input reset_BTN,
         input sw0,
         input sw2,
-        //input [7:0] data_in,
+        input [7:0] data_in,
         //output [7:0] data_out,
         //output data_ready,
         output led0,
@@ -14,7 +14,7 @@ module Turbocode_top(
         output led3
     );
     
-    reg  [7:0] data_in;
+    //reg  [7:0] data_in;
     wire [23:0] data_encode, data_out_error;
     wire ready_encoded, ready_to_decode;
     
@@ -23,7 +23,7 @@ module Turbocode_top(
         .clk(clk),
         .reset(reset_BTN),
         .sw2(sw2),
-        .data_in(8'b10110100),
+        .data_in(data_in),
         .data_out(data_encode),
         .ready_encoded(ready_encoded)
     );
@@ -54,10 +54,9 @@ module Turbocode_top(
 //        reset = 0;
 //    end
     
-    always@(*) begin
-        if(sw0) data_in = 8'b10110100;
-        else    data_in = 8'b00000000;
-    end
+//    initial begin
+//        data_in <= 8'b10110100;
+//    end
     
     
 
