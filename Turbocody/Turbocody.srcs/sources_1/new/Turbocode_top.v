@@ -1,17 +1,18 @@
 `timescale 1ns / 1ps
 
 module Turbocode_top(
-        input clk,
-        input reset_BTN,
-        input sw0,
-        input sw2,
+        input wire  clk,
+        input wire  reset_BTN,
+        input wire  sw0,
+        input wire  sw1,
+        input wire  sw2,
         //input [7:0] data_in,
         //output [7:0] data_out,
         //output data_ready,
-        output led0,
-        output led1,
-        output led2,
-        output led3
+        output reg  led0,
+        output reg  led1,
+        output reg  led2,
+        output reg  led3
     );
     
     reg  [7:0] data_in;
@@ -22,6 +23,7 @@ module Turbocode_top(
     Turbo_Encoder TE (
         .clk(clk),
         .reset(reset_BTN),
+        .sw2(sw1),
         .sw2(sw2),
         .data_in(8'b10110100),
         .data_out(data_encode),
