@@ -2,39 +2,24 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jun 21 20:34:21 2023
-# Process ID: 14984
+# Start of session at: Wed Jun 21 21:06:13 2023
+# Process ID: 13068
 # Current directory: C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24148 C:\Users\czlow\OneDrive\Dokumenty\GitHub\projekt_SDUP\Turbocody\Turbocody.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18860 C:\Users\czlow\OneDrive\Dokumenty\GitHub\projekt_SDUP\Turbocody\Turbocody.xpr
 # Log file: C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/vivado.log
 # Journal file: C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/Turbocody.xpr
-report_ip_status -name ip_status 
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
 synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1

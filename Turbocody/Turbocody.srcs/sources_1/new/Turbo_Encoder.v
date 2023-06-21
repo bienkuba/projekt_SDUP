@@ -6,8 +6,8 @@ module Turbo_Encoder(
     input wire          sw1,
     input wire          sw2,
     input wire [7:0]    data_in,
-    output reg [23:0]   data_out,
-    output reg          ready_encoded
+    output  [23:0]   data_out,
+    output           ready_encoded
     );
     
     wire        ready_data_1, ready_data_2, ready_out_intl, inter_ready_out;

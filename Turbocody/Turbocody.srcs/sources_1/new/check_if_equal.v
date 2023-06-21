@@ -88,6 +88,6 @@ module check_if_equal(
                     led3 <= 1;
                 end
               end
-         end*/
-    end
+         end
+    end*/
 endmodule

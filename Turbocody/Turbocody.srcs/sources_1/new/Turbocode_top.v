@@ -9,10 +9,10 @@ module Turbocode_top(
         //input [7:0] data_in,
         //output [7:0] data_out,
         //output data_ready,
-        output reg  led0,
-        output reg  led1,
-        output reg  led2,
-        output reg  led3
+        output led0,
+        output led1,
+        output led2,
+        output led3
     );
     
     reg  [7:0] data_in;
@@ -23,7 +23,7 @@ module Turbocode_top(
     Turbo_Encoder TE (
         .clk(clk),
         .reset(reset_BTN),
-        .sw2(sw1),
+        .sw1(sw1),
         .sw2(sw2),
         .data_in(8'b10110100),
         .data_out(data_encode),

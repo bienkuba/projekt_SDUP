@@ -306,7 +306,7 @@
       </ReportStrategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -319,16 +319,17 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017" CtrlBit="true">
         <ReportConfig DisplayName="impl_1_init_report_timing_summary_0" Name="impl_1_init_report_timing_summary_0" Spec="report_timing_summary" RunStep="init_design" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_opt_report_drc_0" Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_opt_report_drc_0" Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="Turbocode_top_drc_opted.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_drc_opted.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="Turbocode_top_drc_opted.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_1_opt_report_timing_summary_0" Name="impl_1_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="opt_design" Version="1" Minor="0" IsDisabled="true">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
@@ -340,14 +341,14 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_io_0" Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_io_0" Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="Turbocode_top_io_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_utilization_0" Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_utilization_0" Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="Turbocode_top_utilization_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_utilization_placed.pb"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_place_report_control_sets_0" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_place_report_control_sets_0" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="Turbocode_top_control_sets_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="verbose" Type="" Value="true"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_1_place_report_incremental_reuse_0" Name="impl_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
@@ -371,34 +372,34 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_drc_0" Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_drc_0" Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="Turbocode_top_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_drc_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="Turbocode_top_drc_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_methodology_0" Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_methodology_0" Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="Turbocode_top_methodology_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_methodology_drc_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="Turbocode_top_methodology_drc_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_power_0" Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_power_0" Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="Turbocode_top_power_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_power_summary_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="Turbocode_top_power_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_route_status_0" Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_route_status_0" Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="Turbocode_top_route_status.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_route_status.pb"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_timing_summary_0" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_timing_summary_0" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="Turbocode_top_timing_summary_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="Turbocode_top_timing_summary_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="Turbocode_top_timing_summary_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_1_route_report_incremental_reuse_0" Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="Turbocode_top_incremental_reuse_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_route_report_clock_utilization_0" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" Version="1" Minor="0">
+        <ReportConfig DisplayName="impl_1_route_report_clock_utilization_0" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="Turbocode_top_clock_utilization_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_1_route_implementation_log_0" Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="Turbocode_top.vdi">
@@ -410,10 +411,10 @@
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_bitstream_report_webtalk_0" Name="impl_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream">
+        <ReportConfig DisplayName="impl_1_bitstream_report_webtalk_0" Name="impl_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream" ReportFile="usage_statistics_webtalk.html">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="impl_1_bitstream_implementation_log_0" Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream">
+        <ReportConfig DisplayName="impl_1_bitstream_implementation_log_0" Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream" ReportFile="Turbocode_top.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>

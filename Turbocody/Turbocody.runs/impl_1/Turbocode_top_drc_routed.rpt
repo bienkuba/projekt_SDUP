@@ -1,0 +1,52 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Jun 21 21:12:49 2023
+| Host         : LAPTOP-1QF2NU10 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Turbocode_top_drc_routed.rpt -pb Turbocode_top_drc_routed.pb -rpx Turbocode_top_drc_routed.rpx
+| Design       : Turbocode_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+--------------------+------------+
+| Rule     | Severity | Description        | Violations |
++----------+----------+--------------------+------------+
+| PDRC-153 | Warning  | Gated clock check  | 2          |
+| ZPS7-1   | Warning  | PS7 block required | 1          |
++----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net TD/disassembler/E[0] is a gated clock net sourced by a combinational pin TD/disassembler/next_data_out_reg_i_2/O, cell TD/disassembler/next_data_out_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net TD/disassembler/state_reg[1][0] is a gated clock net sourced by a combinational pin TD/disassembler/next_data_out_reg_i_2__0/O, cell TD/disassembler/next_data_out_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+
