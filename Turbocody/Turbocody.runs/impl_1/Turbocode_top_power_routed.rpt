@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Jun 21 22:25:54 2023
+| Date             : Wed Jun 21 23:33:40 2023
 | Host             : LAPTOP-1QF2NU10 running 64-bit major release  (build 9200)
 | Command          : report_power -file Turbocode_top_power_routed.rpt -pb Turbocode_top_power_summary_routed.pb -rpx Turbocode_top_power_routed.rpx
 | Design           : Turbocode_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.101        |
+| Total On-Chip Power (W)  | 0.100        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.008        |
+| Dynamic (W)              | 0.007        |
 | Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.8         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      640 |       --- |             --- |
+| Slice Logic    |     0.002 |      637 |       --- |             --- |
 |   LUT as Logic |     0.001 |      255 |     17600 |            1.45 |
 |   CARRY4       |    <0.001 |       48 |      4400 |            1.09 |
-|   Register     |    <0.001 |      229 |     35200 |            0.65 |
+|   Register     |    <0.001 |      227 |     35200 |            0.64 |
 |   Others       |     0.000 |       21 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |        6 |     17600 |            0.03 |
-| Signals        |     0.001 |      327 |       --- |             --- |
-| I/O            |     0.004 |        8 |       100 |            8.00 |
+| Signals        |     0.001 |      325 |       --- |             --- |
+| I/O            |     0.003 |        8 |       100 |            8.00 |
 | Static Power   |     0.093 |          |           |                 |
-| Total          |     0.101 |          |           |                 |
+| Total          |     0.100 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -148,7 +148,7 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| Turbocode_top |     0.008 |
+| Turbocode_top |     0.007 |
 |   TD          |     0.002 |
 |   TE          |     0.002 |
 +---------------+-----------+

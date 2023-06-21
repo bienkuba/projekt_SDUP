@@ -4,6 +4,7 @@ module Turbo_testbench();
     reg clk;
     reg reset;
     reg sw0;
+    reg sw1;
     reg sw2;
     reg [7:0] data_in;
     //wire [7:0] data_out;
@@ -16,8 +17,9 @@ module Turbo_testbench();
     Turbocode_top TC (
         .clk(clk),
         .reset_BTN(reset),
-        .data_in(data_in),
+//        .data_in(data_in),
         .sw0(sw0),
+        .sw1(sw1),
         .sw2(sw2),
         .led0(led0),
         .led1(led1),
@@ -26,6 +28,7 @@ module Turbo_testbench();
     );    
       initial begin
         sw0 = 1;
+        sw1 = 0;
         sw2 = 0;
       end
       
@@ -38,6 +41,13 @@ module Turbo_testbench();
           reset = 1;
           #50;
           reset = 0;
+          #500;
+          sw1 = 1;
+          #500;
+          sw1 = 0;
+          #50;
+          sw2 = 2;
+          #500;
       end
       
       initial begin

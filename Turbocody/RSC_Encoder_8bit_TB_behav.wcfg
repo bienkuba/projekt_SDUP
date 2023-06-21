@@ -11,15 +11,55 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="55725000fs"></ZoomStartTime>
-      <ZoomEndTime time="347519523fs"></ZoomEndTime>
-      <Cursor1Time time="225000000fs"></Cursor1Time>
+      <ZoomStartTime time="42436235fs"></ZoomStartTime>
+      <ZoomEndTime time="892040457fs"></ZoomEndTime>
+      <Cursor1Time time="390721000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="192"></NameColumnWidth>
-      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+      <ValueColumnWidth column_width="154"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="42" />
+   <WVObjectSize size="64" />
+   <wvobject fp_name="/Turbo_testbench/TC/TE/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/data_decode_1" type="array">
+      <obj_property name="ElementShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TE/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/data_decode_1" type="array">
+      <obj_property name="ElementShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TE/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -51,11 +91,6 @@
    <wvobject fp_name="/Turbo_testbench/TC/TE/ready_encoded" type="logic">
       <obj_property name="ElementShortName">ready_encoded</obj_property>
       <obj_property name="ObjectShortName">ready_encoded</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Turbo_testbench/TC/TE/data_in_2" type="array">
-      <obj_property name="ElementShortName">data_in_2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in_2[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TE/data_1" type="array">
       <obj_property name="ElementShortName">data_1[15:0]</obj_property>
@@ -102,12 +137,6 @@
       <obj_property name="ObjectShortName">data_in[23:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/Turbo_testbench/TC/TD/data_out" type="array">
-      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-   </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TD/data_parity_1" type="array">
       <obj_property name="ElementShortName">data_parity_1[15:0]</obj_property>
       <obj_property name="ObjectShortName">data_parity_1[15:0]</obj_property>
@@ -144,10 +173,6 @@
       <obj_property name="ElementShortName">deintl_ready</obj_property>
       <obj_property name="ObjectShortName">deintl_ready</obj_property>
    </wvobject>
-   <wvobject fp_name="/Turbo_testbench/TC/TD/decoded_ready" type="logic">
-      <obj_property name="ElementShortName">decoded_ready</obj_property>
-      <obj_property name="ObjectShortName">decoded_ready</obj_property>
-   </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/interleaver/ready_out" type="logic">
       <obj_property name="ElementShortName">ready_out</obj_property>
       <obj_property name="ObjectShortName">ready_out</obj_property>
@@ -168,7 +193,6 @@
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/interleaver/data_out" type="array">
       <obj_property name="ElementShortName">data_out[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/interleaver/ready_out" type="logic">
@@ -178,7 +202,6 @@
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/interleaver/data_out_nxt" type="array">
       <obj_property name="ElementShortName">data_out_nxt[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_out_nxt[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/out_1_nxt" type="array">
@@ -214,5 +237,71 @@
    <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/data_disassembled" type="logic">
       <obj_property name="ElementShortName">data_disassembled</obj_property>
       <obj_property name="ObjectShortName">data_disassembled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/check/original" type="array">
+      <obj_property name="ElementShortName">original[7:0]</obj_property>
+      <obj_property name="ObjectShortName">original[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/check/data_decode_1" type="array">
+      <obj_property name="ElementShortName">data_decode_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_decode_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/check/data_deinterleaved" type="array">
+      <obj_property name="ElementShortName">data_deinterleaved[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_deinterleaved[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/deinterleaver/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/deinterleaver/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/ready_out" type="logic">
+      <obj_property name="ElementShortName">ready_out</obj_property>
+      <obj_property name="ObjectShortName">ready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/decoder_2/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/out_1" type="array">
+      <obj_property name="ElementShortName">out_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/out_2" type="array">
+      <obj_property name="ElementShortName">out_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Turbo_testbench/TC/TD/disassembler/out_3" type="array">
+      <obj_property name="ElementShortName">out_3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_3[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>

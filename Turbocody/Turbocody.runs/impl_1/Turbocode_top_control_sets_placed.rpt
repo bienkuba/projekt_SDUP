@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jun 21 22:25:38 2023
+| Date         : Wed Jun 21 23:33:24 2023
 | Host         : LAPTOP-1QF2NU10 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Turbocode_top_control_sets_placed.rpt
 | Design       : Turbocode_top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    67 |
+| Unused register locations in slices containing registers |    69 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              17 |            6 |
+| No           | No                    | No                     |              16 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              22 |           10 |
-| Yes          | No                    | No                     |              50 |           16 |
+| No           | Yes                   | No                     |              22 |            9 |
+| Yes          | No                    | No                     |              49 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             140 |           39 |
+| Yes          | Yes                   | No                     |             140 |           37 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,21 +74,21 @@ Table of Contents
 |            Clock Signal            |                  Enable Signal                  |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
 +------------------------------------+-------------------------------------------------+-----------------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG                     |                                                 | TD/deinterleaver/data_out_reg[0]_0      |                1 |              1 |
-|  clk_IBUF_BUFG                     |                                                 | TD/deinterleaver/data_out_reg[0]_1      |                1 |              1 |
 |  clk_IBUF_BUFG                     |                                                 | TD/deinterleaver/data_out_reg[0]_2      |                1 |              1 |
+|  clk_IBUF_BUFG                     |                                                 | TD/deinterleaver/data_out_reg[0]_1      |                1 |              1 |
 |  clk_IBUF_BUFG                     |                                                 | reset_BTN_IBUF                          |                1 |              1 |
 |  TD/disassembler/E[0]              |                                                 |                                         |                1 |              3 |
 |  TD/disassembler/state_reg[1]_0[0] |                                                 |                                         |                1 |              3 |
 |  clk_IBUF_BUFG                     |                                                 | TD/disassembler/data_disassembled_reg_0 |                2 |              4 |
 |  clk_IBUF_BUFG                     |                                                 | TE/interleaver/ready_out_reg_0          |                2 |              6 |
-|  clk_IBUF_BUFG                     |                                                 | TD/decoder_2/SR[0]                      |                2 |              8 |
-|  clk_IBUF_BUFG                     | TE/RSC1/data_out[14]_i_1_n_0                    |                                         |                3 |              8 |
+|  clk_IBUF_BUFG                     |                                                 | TD/decoder_2/SR[0]                      |                1 |              8 |
 |  clk_IBUF_BUFG                     | TD/decoder_1/data_out[7]_i_1_n_0                |                                         |                2 |              8 |
 |  clk_IBUF_BUFG                     | TD/decoder_2/data_out[7]_i_1__0_n_0             |                                         |                1 |              8 |
-|  clk_IBUF_BUFG                     | TE/RSC2/data_out[14]_i_1__0_n_0                 |                                         |                2 |              8 |
-|  clk_IBUF_BUFG                     |                                                 |                                         |                4 |             11 |
-|  clk_IBUF_BUFG                     | TE/RSC1/E[0]                                    | reset_BTN_IBUF                          |                7 |             18 |
-|  clk_IBUF_BUFG                     | TD/disassembler/interleaver/E[0]                |                                         |                8 |             18 |
+|  clk_IBUF_BUFG                     | TE/RSC1/data_out[14]_i_1_n_0                    |                                         |                1 |              8 |
+|  clk_IBUF_BUFG                     | TE/RSC2/data_out[14]_i_1__0_n_0                 |                                         |                3 |              8 |
+|  clk_IBUF_BUFG                     |                                                 |                                         |                3 |             10 |
+|  clk_IBUF_BUFG                     | TD/disassembler/interleaver/E[0]                |                                         |                5 |             17 |
+|  clk_IBUF_BUFG                     | TE/RSC1/E[0]                                    | reset_BTN_IBUF                          |                5 |             18 |
 |  clk_IBUF_BUFG                     | TE/RSC1/state0_inferred__0/i__carry__2_n_0      | TE/interleaver/ready_out_reg_1          |                8 |             29 |
 |  clk_IBUF_BUFG                     | TE/RSC2/state0_inferred__0/i__carry__2_n_0      | TE/interleaver/ready_out_reg_1          |                8 |             29 |
 |  clk_IBUF_BUFG                     | TD/decoder_1/state0_inferred__0/i__carry__2_n_0 | TD/disassembler/data_disassembled_reg_1 |                8 |             32 |

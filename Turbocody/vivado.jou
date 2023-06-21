@@ -23,3 +23,84 @@ wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/check/original}} {{/Turbo_testbench/TC/TD/check/data_decode_1}} {{/Turbo_testbench/TC/TD/check/data_deinterleaved}} 
+relaunch_sim
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/deinterleaver/data_in}} {{/Turbo_testbench/TC/TD/deinterleaver/data_out}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/data_out}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/data_in}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/en}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/ready_out}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_1/data_out}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/data_out}} 
+relaunch_sim
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/decoder_2/en}} {{/Turbo_testbench/TC/TD/decoder_2/data_in}} 
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/disassembler/out_1}} {{/Turbo_testbench/TC/TD/disassembler/out_2}} {{/Turbo_testbench/TC/TD/disassembler/out_3}} 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+save_wave_config {C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/czlow/OneDrive/Dokumenty/GitHub/projekt_SDUP/Turbocody/RSC_Encoder_8bit_TB_behav.wcfg
+source Turbo_testbench.tcl
+relaunch_sim
+current_wave_config {RSC_Encoder_8bit_TB_behav.wcfg}
+add_wave {{/Turbo_testbench/TC/TD/check/led0}} {{/Turbo_testbench/TC/TD/check/led1}} {{/Turbo_testbench/TC/TD/check/led2}} {{/Turbo_testbench/TC/TD/check/led3}} 
+relaunch_sim
+run 3500 ns
+relaunch_sim
+run all
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
